@@ -1,0 +1,31 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1",
+        "update_url": null
+    },
+    "exported_at": "2021-12-04T08:15:30-05:00",
+    "name": "Debian",
+    "author": "luka@artgroup.ml",
+    "description": "Debian is a popular and freely available computer operating system (OS) that uses a Unix-like kernel-- typically Linux -- alongside other program components, many of which come from GNU Project.",
+    "features": null,
+    "images": [
+        "ghcr.io\/mikolajkolek\/images:debian"
+    ],
+    "file_denylist": [],
+    "startup": "bash install.sh",
+    "config": {
+        "files": "{}",
+        "startup": "{}",
+        "logs": "{}",
+        "stop": "exit"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n# hello\r\ncd \/mnt\/server\r\ncurl https:\/\/cdn2.mythicalkitten.com\/pterodactylmarket\/ptero-vm\/install.sh -o install.sh\r\n\r\necho \"Starting\"",
+            "container": "ghcr.io\/pterodactyl\/installers:debian",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": []
+}
