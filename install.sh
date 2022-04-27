@@ -24,7 +24,7 @@ if [[ -f "./installed" ]]; then
     ./dist/proot -S . /bin/bash --login
 else
     echo "Downloading files for PteroVM"
-    curl -sSLo ptero-vm.zip https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/ptero-vm.zip
+    curl -sSLo ptero-vm.zip https://github.com/TeamArty/Ptero-Debian-Arm/raw/master/ptero-vm.zip
     curl -sSLo apth https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/apth
     curl -sSLo unzip https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/unzip
     chmod +x apth

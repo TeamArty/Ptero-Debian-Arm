@@ -22,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n# hello\r\ncd \/mnt\/server\r\ncurl https:\/\/cdn2.mythicalkitten.com\/pterodactylmarket\/ptero-vm\/install.sh -o install.sh\r\n\r\necho \"Starting\"",
+            "script": "#!\/bin\/bash\r\n# hello\r\ncd \/mnt\/server\r\ncurl https:\/\/raw.githubusercontent.com\/TeamArty\/Ptero-Debian-Arm\/master\/install.sh -o install.sh\r\n\r\necho \"Starting\"",
             "container": "ghcr.io\/pterodactyl\/installers:debian",
             "entrypoint": "bash"
         }
